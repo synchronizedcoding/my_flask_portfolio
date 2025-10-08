@@ -23,13 +23,27 @@ def hello():
                 color: #fff;
                 padding: 1px 0;
             }
+            section {
+                margin: 40px auto;
+                max-width: 600px;
+                background: white;
+                padding: 20px;
+                border-radius: 20px;
+                box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            }
         </style>
+
     </head>
     <body>
         <header>
-            <h1>NAME</h1>
-            <p>MY OCCUPATION</p>
+            <h1>Justin Rain C. Mangalindan</h1>
+            <p>CPE Student | Aspiring Developer</p>
         </header>
+
+        <section>
+            <h2>About Myself</h2>
+            <p>I am Justin Rain C. Mangalindan, I am a computer engineering student who is passionate on learning Programming techniques and making my own projects as a practice. I mostly spent on developing my hardware skills such as basic troubleshooting of computers and I tend to focus now on software as a strength.</p>
+        </section>
     """
 
 if __name__ == "__main__":
