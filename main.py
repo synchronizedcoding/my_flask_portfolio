@@ -44,6 +44,17 @@ def hello():
             <h2>About Myself</h2>
             <p>I am Justin Rain C. Mangalindan, I am a computer engineering student who is passionate on learning Programming techniques and making my own projects as a practice. I mostly spent on developing my hardware skills such as basic troubleshooting of computers and I tend to focus now on software as a strength.</p>
         </section>
+
+        <section>
+            <h2>My Projects</h2>
+            <ul>
+                <li>• Basic Python Operations</li>
+                <li>• Personal Portfolio Website</li>
+                <li>• Terminal-based dank-memer</li>
+                <li>• Quiz reader and Quiz creator program</li>
+            </ul>
+        </section>
+
     """
 
 if __name__ == "__main__":
