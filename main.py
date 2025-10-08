@@ -31,6 +31,13 @@ def hello():
                 border-radius: 20px;
                 box-shadow: 0 0 20px rgba(0,0,0,0.1);
             }
+            ul {
+                list-style: none;
+                padding: 0;
+                font-size: 18px;
+                text-align: left;
+                display: inline-block;
+            }
         </style>
 
     </head>
