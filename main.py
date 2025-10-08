@@ -8,6 +8,8 @@ def hello():
     <!DOCTYPE html>
     <html lang="en">
     <head>
+        <title>My Portfolio (w/ Flask)</title>
+        <style>
     
     """
 
