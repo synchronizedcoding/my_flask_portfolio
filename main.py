@@ -63,10 +63,10 @@ def hello():
         <section>
             <h2>My Projects</h2>
             <ul>
-                <li>• Basic Python Operations</li>
-                <li>• Personal Portfolio Website</li>
-                <li>• Terminal-based dank-memer</li>
-                <li>• Quiz reader and Quiz creator program</li>
+                <li><a href="https://github.com/synchronizedcoding/practice_python_programs_batch_1_to_4" target="_blank">• Basic Python Operations</a></li>
+                <li><a href="https://github.com/synchronizedcoding/my_flask_portfolio" target="_blank">• Personal Portfolio Website</a></li>
+                <li><a href="https://github.com/synchronizedcoding/python_dank_memer_code" target="_blank">• Terminal-based dank-memer</a></li>
+                <li><a href="https://github.com/synchronizedcoding/oop_quiz_creator_and_reader" target="_blank">• Quiz reader and Quiz creator program</a></li>
             </ul>
         </section>
 
