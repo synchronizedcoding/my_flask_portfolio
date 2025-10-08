@@ -18,6 +18,18 @@ def hello():
                 color: #333;
                 text-align: center;
             }
+            header {
+                background-color: #222;
+                color: #fff;
+                padding: 1px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>NAME</h1>
+            <p>MY OCCUPATION</p>
+        </header>
     """
 
 if __name__ == "__main__":
