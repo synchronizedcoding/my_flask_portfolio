@@ -10,7 +10,14 @@ def hello():
     <head>
         <title>My Portfolio (w/ Flask)</title>
         <style>
-    
+            body {
+                font-family: Serif, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #B6B6B6;
+                color: #333;
+                text-align: center;
+            }
     """
 
 if __name__ == "__main__":
