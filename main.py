@@ -70,6 +70,10 @@ def hello():
             </ul>
         </section>
 
+        <section>
+            <h2>Contact</h2>
+            <p>GitHub: <a href="https://github.com/synchronizedcoding" target="_blank">https://github.com/synchronizedcoding</a></p>
+        </section>
     """
 
 if __name__ == "__main__":
