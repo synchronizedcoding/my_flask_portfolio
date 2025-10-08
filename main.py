@@ -38,6 +38,14 @@ def hello():
                 text-align: left;
                 display: inline-block;
             }
+            p {
+                font-size: 18px;
+                line-height: 1.6;
+            }
+            a {
+                color: #007BFF;
+                text-decoration: none;
+            }
         </style>
 
     </head>
