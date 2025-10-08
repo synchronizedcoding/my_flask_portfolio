@@ -4,7 +4,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "testing!"
+    return """
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    
+    """
 
 if __name__ == "__main__":
     app.run(debug=True)
