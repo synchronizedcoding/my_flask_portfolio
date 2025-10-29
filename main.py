@@ -68,6 +68,7 @@ def hello():
                 <li><a href="https://github.com/synchronizedcoding/my_flask_portfolio" target="_blank">• Personal Portfolio Website</a></li>
                 <li><a href="https://github.com/synchronizedcoding/python_dank_memer_code" target="_blank">• Terminal-based dank-memer</a></li>
                 <li><a href="https://github.com/synchronizedcoding/oop_quiz_creator_and_reader" target="_blank">• Quiz reader and Quiz creator program</a></li>
+                <li><a href="/infix_to_postfix">• Infix to Postfix Converter</a></li>
             </ul>
         </section>
 
