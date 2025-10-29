@@ -1,4 +1,5 @@
-from flask import Flask
+from flask import Flask, request
+from convert import infix_to_postfix
 
 app = Flask(__name__)
 
@@ -75,6 +76,83 @@ def hello():
             <p>GitHub: <a href="https://github.com/synchronizedcoding" target="_blank">https://github.com/synchronizedcoding</a></p>
         </section>
     """
+
+@app.route('/infix_to_postfix', methods=['GET', 'POST'])
+def infix_to_postfix_page():
+    result = ''
+    infix = ''
+    if request.method == 'POST':
+        infix = request.form['expression']
+        result = infix_to_postfix(infix)  # call imported converter
+
+    return f"""
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Infix to Postfix Converter</title>
+        <style>
+            body {{
+                font-family: Serif, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #B6B6B6;
+                color: #333;
+                text-align: center;
+            }}
+            header {{
+                background-color: #222;
+                color: #fff;
+                padding: 1px 0;
+            }}
+            section {{
+                margin: 40px auto;
+                max-width: 600px;
+                background: white;
+                padding: 20px;
+                border-radius: 20px;
+                box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            }}
+            input[type=text] {{
+                width: 80%;
+                padding: 10px;
+                margin: 10px 0;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+            }}
+            button {{
+                padding: 10px 20px;
+                font-size: 16px;
+                border: none;
+                border-radius: 10px;
+                background-color: #222;
+                color: white;
+                cursor: pointer;
+            }}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Justin Rain C. Mangalindan</h1>
+            <p>CPE Student | Aspiring Developer</p>
+        </header>
+
+        <section>
+            <h2>Infix to Postfix Converter</h2>
+            <form method="POST">
+                <input type="text" name="expression" placeholder="Enter infix (e.g. A + B * C)" value="{infix}" required>
+                <br>
+                <button type="submit">Convert to Postfix</button>
+            </form>
+            <h3>Result:</h3>
+            <p>{result}</p>
+        </section>
+
+        <p><a href="/">← Back to Home</a></p>
+    </body>
+    </html>
+    """
+
 
 if __name__ == "__main__":
     app.run(debug=True)
